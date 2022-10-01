@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 align="center">Заполните анкету</h1>
+    <Form id="my_form" name="form2" action="http://fe.it-academy.by/TestForm.php" method="post">
+        <fieldset>
+            <legend>Личные данные</legend>
+    <input required autofocus pattern="[А-Яа-я]{0,25}" type="text" name="text"  placeholder="Фамилия"> <br>
+    <input required pattern="[А-Яа-я]{0,20}" type="text" name="text1" placeholder="Имя"> <br>
+    <input required pattern="[А-Яа-я]{0,24}" type="text" name="text2" placeholder="Отчество">
+    
+    <legend>Паспортные данные</legend>
+    <input required pattern="[A-Z]{2}" type="text" name="text3" placeholder="Серия">
+    <input required pattern="[0-9]{7}" type="text" name="text4" placeholder="Номер">
+
+
+<fieldset>
+    <legend>Дата рождения</legend>
+    <input pattern="[0-9]{4}" type="text" name="text5" placeholder="2000">
+    <select name="select" size="1">
+        <option value="option1">Январь</option>
+        <option value="option2">Февраль</option>
+        <option value="option3">Март</option>
+        <option value="option4">Апрель</option>
+        <option value="option5">Май</option>
+        <option value="option6">Июнь</option>
+        <option value="option7">Июль</option>
+        <option value="option8">Август</option>
+        <option value="option9">Сентябрь</option>
+        <option value="option10">Октябрь</option>
+        <option value="option11">Ноябрь</option>
+        <option value="option12">Декабрь</option>
+    </select>
+    <input pattern="[0-9]{1,2}" type="text" name="text6">
+
+</fieldset>
+<fieldset>
+    <select name="select2" size="1">
+        <option value="option13">РБ</option>
+        <option value="option14">РФ</option>
+    </select> <br>
+    <Label for="adress">Адрес</Label> <br>
+    <input id="adress" type="text" name="text6">
+</fieldset>
+<fieldset>
+    <legend>Интересы</legend>
+    <fieldset>
+        <legend>Хобби</legend>
+<input type="checkbox" name="check1" value="Рыбалки">Рыбалки <br>
+<input type="checkbox" name="check2" value="Астрономия">Астрономия <br>
+<input type="checkbox" name="check3" value="Дайвинг">Дайвинг <br>
+<input type="checkbox" name="check4" value="Марки">Марки <br>
+</fieldset>
+
+<fieldset>
+    <legend>Домашние животные</legend>
+    <select multiple name="selesct2" size="9">
+        <optgroup label="Папугаи">
+        <option value="option13">Волнистый</option>
+        <option value="option14">Ара</option>
+        <option value="option15">Неразлучник</option>
+      </optgroup>
+        <optgroup label="Рыба">
+        <option value="option16">Караси</option>
+        <option value="option17">Окуни</option>
+        <option value="option18">Осётр</option>
+    </optgroup>
+    <optgroup label="Птицы">
+        <option value="option16">Стая ворон</option>
+        <option value="option17">Аист</option>
+        <option value="option18">Археоптерикс</option>
+    </optgroup>
+    </select>
+</fieldset>
+    <fieldset>
+        <legend>Данные для входа и восстановление пороля</legend>
+        <input required pattern="[A-Za-z]{5,20}" type="text" name="user"  placeholder="Логин"> <br>
+    <input required pattern="[A-Za-z]{10,20}" type="pass" name="pass" placeholder="Пароль" autocomplete="off"> <br>
+    <fieldset>
+        <legend>Координаты</legend>
+        <input required maxlength="30" type="email" name="email"  placeholder="введите адрес электронной почты"> <br>
+    <input required maxlength="30" type="url" name="url" placeholder="введите адрес сайта"> <br>
+
+    </fieldset>
+    <fieldset>
+        <legend>Цифры</legend>
+            <input type="number" min="-2.5" max="2.5" step="0.1"> <br>
+            <input type="range" min="1" max="10"> <br>
+        
+    </fieldset>
+    <fieldset>
+        <legend>Кнопки управления</legend>
+        <input type="submit" name="отправить">
+        <input type="reset" value="Сбросить">
+    </fieldset>
+    <button type='button'>
+        <b>Submit</b><br>
+        <img src='/email.jpg'>
+</button>
+
+
+</fieldset>
+
+
+
+
+
+
+        </fieldset>
+    </Form>
+</body>
+</html>
