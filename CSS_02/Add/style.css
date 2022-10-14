@@ -1,0 +1,43 @@
+
+pre{ padding: 3em;}
+.bordere {background-image: url('ramka.png'); background-repeat:no-repeat; 
+ background-position: 0px -13px;
+ width: 100px; height: 100px;}
+ .border1 {background-image: url('ramka.png'); background-repeat:no-repeat; 
+ top: 20px; right: 30px;
+ width: 691px; height: 29px; size: 200%; }
+ .border2 {background-image: url('ramka.png'); background-repeat:no-repeat; 
+ top: 216px;
+ right: 238px;
+ width: 708px;
+ height: 31px;
+ background-position: 252px -8px;}
+.border3 {background-image: url('ramka.png'); background-repeat:no-repeat; 
+width: 100px;
+ top: 2px;
+ top: 10px;
+ right: 10px;
+ left: -10px;
+position:absolute; }
+ .border4 {background-image: url('ramka.png'); background-repeat:no-repeat;    
+ width: 675px;
+
+ height: 243px;
+ background-repeat: no-repeat;
+
+ background-position: 8px 206px;
+ } 
+.border5 {background-image: url('ramka.png'); background-repeat:no-repeat;    
+
+top: 198px;
+ right: 226px;
+ width: 786px;
+ height: -1px;
+ background-position: 679px -69px;}
+ .border6 {background-image: url('ramka.png'); background-repeat:no-repeat;   ;
+ width: 675px;
+ height: 186px;
+ height: 243px;
+ background-repeat: no-repeat;
+ background-position: 274px -97px;
+ background-position: 281px 206px;}
