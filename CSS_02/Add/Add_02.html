@@ -1,115 +1,72 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
- <head>
+<!DOCTYPE html> 
+<HTML> 
+<head><META charset="utf-8">
+    <TITLE>Пример страницы</TITLE>
+    </head>
+    <style>
+    .underline {background-color: rgba(197, 197, 197, 0.863); 
+  }
+    .under {background-color:  rgba(197, 197, 197, 0.863); }
+    .block1 {background-color: gray;  margin-bottom: 2em; margin: 1em;}
+    .block2 {background-color: rgb(65, 64, 64); margin: 1em; margin-bottom: 1em; padding-left: 14em;   }
+    
+    
+    footer {width: 100%;
+            background-color: gray;
+           }
+           .flexcontainer {display: flex; flex-direction: row-reverse; align-items: flex-end; flex-wrap:nowrap; justify-content: center; justify-content: space-around;}
 
-  
-          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-      
-          <style>
-              .block4 { display: flex;
-                flex-direction:column-reverse;
-            justify-content: space-between;
-        flex-wrap: nowrap;
-    align-items: flex-end;}
-    pre {text-align: left;}
-           .block1 { 
-            width:90%;
-           background-color: rgb(65, 63, 63);
-           
-           vertical-align: top;
-          
-           margin-bottom: 2em;
-           }
-           
-           .block2 { 
-              
-            
-           width:90%;
-           background-color: rgb(65, 63, 63);
-           
-           vertical-align: top;
-          
-           margin-bottom: 2em;
-     }
-     .block3 { 
-      
-            
-           width:90%; height: 255px;
-           background-color: rgb(65, 63, 63);
-           align-self: flex-start;
-         
-           
-           position: relative;
-           
-           
-           
-         
-     }
-           .container {
-              width: 100%;
-              box-sizing: border-box;
-              position: relative;
-              
-           }
-              footer {width: 100%;
-              background-color: gray;
-              margin-bottom: 2em;
-             }
-             
-           
-      
-          </style>
-         </head>
-         <body>
-            <div class="block4">
-          <div class="container">
-              <header>
-          <div class="block1">
-             
-                  Ширина<br>
-                  Должен распологаться слева<br>
-                  Цвет фона<br>
-                  Наполнить содержанием <br>
-                       Наполнить содержанием <br>
-                       Наполнить содержанием <br>
-                       Наполнить содержанием <br>
-                       Наполнить содержанием <br>
-                       Наполнить содержанием <br>
-                       Наполнить содержанием <br>
-                       Наполнить содержанием</li>
-            
-          </div>
-          <div class="block2">
-              Блок навигацции <br>
-                  Ширина <br>
-                 Должен распологаться слева <br>
-                 Цвет фона <br>
-                 >Наполнить содержанием <br>
-                    
-              
-      </div>
-  
-      </header>
-     
-  
-      
-      <div class="block3">
-          <ul> <strong>Cписок</strong>
-              <li>Ширина</li>
-              <li>Должен распологаться слева</li>
-              <li>Цвет фона</li>
-              <li>Наполнить содержанием <br>
-                </li>
-          </ul>
-      </div>
-  </div>
-  
-  <footer>Нижний блок, подвал. Занимает всю доступнуюю ширину</footer>
-</div>
-         </body>
+</style>
+
+    <body>
         
-  </head>
-  <body>
+        <div class="underline">
+            <div class="under">
+        <div class="block1">
+            <ul> <strong>Блок навигацции</strong>
+                <li>Ширина</li>
+                <li>Должен распологаться слева</li>
+                <li>Цвет фона</li>
+                <li>Наполнить содержанием <br>
+                     Наполнить содержанием <br>
+                     Наполнить содержанием <br>
+                     Наполнить содержанием</li>
+            </ul>
+        </div>
+        </div>
+        <div></div>
+        <div class="flexcontainer">
+        <div class="block2">
+            <ul> <strong>Блок навигацции</strong>
+                <li>Ширина</li>
+                <li>Должен распологаться слева</li>
+                <li>Цвет фона</li>
+                <li>Наполнить содержанием <br>
+                  </li>
+            </ul>
+    </div>
+
+   
+   
+
+    
+    <div class="block2">
+        <ul> <strong>Cписок</strong>
+            <li>Ширина</li>
+            <li>Должен распологаться слева</li>
+            <li>Цвет фона</li>
+            <li>Наполнить содержанием <br>
+              </li>
+        </ul>
+    </div>
+
+</div>
+<footer>Нижний блок, подвал. Занимает всю доступнуюю ширину</footer>
+
+</div>
       
-  </body>
-  </html>
+</div>
+</div>
+    
+</body>
+</html>
