@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Document</title>
+    <style>
+
+
+a[href$=".doc"]::before {content: url(doc.jpg);}
+a[href$="Format"]::before {content: url(pdf.png);}
+a[href$="ZIP"]::before {content: url(zip.gif);}
+
+        .one {list-style-image: url(list.jpg);}
+       .one:hover { list-style-image: url(doc.jpg); }
+.two {list-style-image: url(list.jpg);}
+.two:hover { list-style-image: url(pdf.png); }
+.three{list-style-image: url(list.jpg);}
+.three:hover { list-style-image: url(zip.gif); }
+    
+    </style>
+</head>
+<body>
+   
+    <H1>Форматы файлов.</H1>
+    <p>DOC или .doc (от англ. <a href="https://ru.wikipedia.org/wiki/.doc" target="_blank">document</a>) — расширение имени файла, используемое для файлов, представляющих текст, с разметкой или без.Расширение .DOC часто использовалось для обозначения простых текстовых файлов без форматирования, однако позже стало использоваться для двоичных форматов с разметкой.
+        <a href="https://ru.wikipedia.org/wiki/.doc" target="_blank">Документ MS Word</a></p>
+        <p>Portable Document Format ( <a href="https://ru.wikipedia.org/wiki/Portable_Document_Format" target="_blank">PDF</a>) — межплатформенный формат электронных документов, разработанный фирмой Adobe Systems с использованием ряда возможностей языка PostScript.
+           <a href="https://ru.wikipedia.org/wiki/Portable_Document_Format" target="_blank"> Документ PDF </a></p>
+           <p>ZIP — популярный формат сжатия данных и архивации файлов. Файл в этом формате обычно имеет расширение <a href="https://ru.wikipedia.org/wiki/ZIP">.zip </a>и хранит в сжатом или несжатом виде один или несколько файлов, которые можно из него извлечь путём распаковки с помощью специальной программы.
+            <a href="https://ru.wikipedia.org/wiki/ZIP"> Архив</a></p>
+            <h2>Это список из файлов</h2>
+            <ul>
+                <li class="one"> <a href="https://www.google.com/intl/ru/docs/about/" target="_blank">Документ MS Word</a></li>
+                <li class="two"><a href="https://get.adobe.com/ru/reader/" target="_blank">Документ PDF</a></li>
+                <li class="three"><a href="https://www.7-zip.org">Архив</a></li>
+            </ul>
+</body>
+</html>
