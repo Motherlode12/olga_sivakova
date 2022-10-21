@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width". initial-scale="1.0">
+ 
+    <title>Document</title>
+    
+    <style>
+    
+    </style>
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+<form action="#"></form>
+<fieldset>
+    <h1>Проверка пароля</h1>
+<input  type="text" name="pass" id="pass1"> Пароль <br>
+<input type="text" name="pass" id="pass2"> Повторите пароль <br>
+</fieldset>
+
+
+<script
+ src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" 
+  crossorigin="anonymous"></script>
+  <script>
+  $(document).ready(function($) {
+$("#pass1").keypress(function() {
+    $("#pass1").css('backgroundColor', 'red')
+
+})
+$("#pass2").keypress(function() {
+    $("#pass2").css('backgroundColor', 'red')
+})
+$("#pass2").on("keyup", function() {
+var value_input1 = $("#pass1").val(); 
+var value_input2 = $("#pass2").val();
+if(value_input1 != value_input2){
+ $("#pass1").css('backgroundColor', 'red')
+ $("#pass2").css('backgroundColor', 'red')}
+
+ else { 
+ $("#pass1").css('backgroundColor', 'green')}
+ $("#pass2").css('backgroundColor', 'green')}
+
+ )}
+ )
+</script>
+
+</body>
+</html>
