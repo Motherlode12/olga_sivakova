@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width". initial-scale="1.0">
+ 
+    <title>Document</title>
+    
+    <style>
+        
+        table {width: 600px; border-collapse: collapse; border: dotted; border-color: gray; }
+        Td {border: dotted; border-color: gray;}
+  
+      tr:nth-child(odd) {background-color: rgb(158, 155, 155);}
+      
+     pre {margin-left: 220px;}
+  
+    </style>
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+    
+    <table class="snow">
+        <col style="width: 300px; height: 280px;">
+        <div>
+<tr class="clickme">
+<td>ФИО</td>
+<td>Пол</td>
+<td>Должность</td>
+<td>Дата рождения</td>
+<td>Данные01</td>
+<td>Данные 02</td>
+</tr>
+</div>
+
+<tr class="clickme1">
+    <td id="clickme">Иванов Иван Иванович </td>
+    <td>М</td>
+    <td>Начальник</td>
+    <td>01,01,1960</td>
+    <td>455456</td>
+    <td>235656</td>
+    </tr>
+    <tr class="clickme2">
+        <td>Петров Петр Петрович</td>
+        <td>мужской</td>
+        <td>секретарь</td>
+        <td>01,01,1960</td>
+        <td>15455</td>
+        <td>12455</td>
+        </tr>
+        <tr class="clickme3">
+            <td>Иванов Иван Иванович </td>
+            <td>М</td>
+            <td>Начальник</td>
+            <td>01,01,1960</td>
+            <td>455456</td>
+            <td>235656</td>
+            </tr>
+            <tr class="clickme4">
+                <td>Петров Петр Петрович</td>
+                <td>мужской</td>
+                <td>секретарь</td>
+                <td>01,01,1960</td>
+                <td>15455</td>
+                <td>12455</td>
+                </tr>
+
+                <tr class="clickme5">
+                    <td>Иванов Иван Иванович </td>
+                    <td>М</td>
+                    <td>Начальник</td>
+                    <td>01,01,1960</td>
+                    <td>455456</td>
+                    <td>235656</td>
+                    </tr>
+
+                </table>
+                <input id="button" type="button" name="Reset">
+        
+<script
+ src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" 
+  crossorigin="anonymous"></script>
+  <script>
+  $(document).ready(function($) {
+    $('.clickme').on("click", function() {
+  $('.clickme').hide(); });
+  $('.clickme1').on("click", function() {
+  $('.clickme1').hide(); });
+  $('.clickme2').on("click", function() {
+  $('.clickme2').hide(); });
+  $('.clickme3').on("click", function() {
+  $('.clickme3').hide(); });
+  $('.clickme4').on("click", function() {
+  $('.clickme4').hide(); });
+  $('.clickme5').on("click", function() {
+  $('.clickme5').hide(); });
+$('#button').on("click", function(){
+$('.clickme').show(), 
+$('.clickme1').show(),
+$('.clickme2').show(),
+$('.clickme3').show(),
+$('.clickme4').show(), 
+$('.clickme5').show() });
+
+});
+</script>
+  
+</script>
+   
+</body>
+</html>
